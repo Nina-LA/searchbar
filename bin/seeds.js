@@ -656,7 +656,9 @@ mongoose
   })
   .then(x => {
     console.log('All users have been created')
+    mongoose.connection.close()
   })
   .catch(err => {
+    mongoose.connection.close()
     console.error('Error connecting to mongo', err)
   });

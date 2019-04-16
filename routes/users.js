@@ -13,7 +13,10 @@ router.get('/', (req, res, next) => {
 
 
 router.post('/', (req, res, next) => {
-  User.find({ username: {$regex : "^" + req.body.search}})
+  User.find({
+    username: {$regex : "^" + req.body.search},
+    age: {$gte: req.body.min, $lte: req.body.max}
+  })
   .then(users => {
     res.send({liste: users});
   })
