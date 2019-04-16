@@ -1,426 +1,47 @@
 const users = [
   {
     "username": "brown",
+    "age": 34,
     "location": [
       12,
-      16
+      17
     ]
   },
   {
-    "username": "green",
+    "username": "brown",
+    "age": 52,
     "location": [
-      9,
+      5,
       0
     ]
   },
   {
     "username": "blue",
+    "age": 23,
     "location": [
       3,
-      9
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      6,
-      10
+      11
     ]
   },
   {
     "username": "blue",
+    "age": 28,
     "location": [
-      3,
-      10
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      9,
-      16
-    ]
-  },
-  {
-    "username": "brown",
-    "location": [
-      15,
-      16
-    ]
-  },
-  {
-    "username": "blue",
-    "location": [
-      13,
-      12
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      17,
-      8
-    ]
-  },
-  {
-    "username": "blue",
-    "location": [
-      7,
-      18
-    ]
-  },
-  {
-    "username": "brown",
-    "location": [
-      15,
-      4
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      19,
-      15
-    ]
-  },
-  {
-    "username": "blue",
-    "location": [
-      2,
-      14
-    ]
-  },
-  {
-    "username": "blue",
-    "location": [
-      2,
-      18
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      9,
-      0
-    ]
-  },
-  {
-    "username": "brown",
-    "location": [
-      5,
-      8
-    ]
-  },
-  {
-    "username": "brown",
-    "location": [
-      8,
-      7
-    ]
-  },
-  {
-    "username": "blue",
-    "location": [
-      5,
+      16,
       5
     ]
   },
   {
     "username": "brown",
-    "location": [
-      6,
-      13
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      10,
-      9
-    ]
-  },
-  {
-    "username": "blue",
-    "location": [
-      6,
-      2
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      1,
-      18
-    ]
-  },
-  {
-    "username": "brown",
-    "location": [
-      2,
-      8
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      13,
-      14
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      1,
-      4
-    ]
-  },
-  {
-    "username": "blue",
-    "location": [
-      10,
-      7
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      17,
-      6
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      16,
-      19
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      12,
-      6
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      0,
-      17
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      19,
-      8
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      3,
-      15
-    ]
-  },
-  {
-    "username": "brown",
-    "location": [
-      7,
-      1
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      18,
-      4
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      18,
-      14
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      20,
-      20
-    ]
-  },
-  {
-    "username": "brown",
-    "location": [
-      3,
-      12
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      3,
-      15
-    ]
-  },
-  {
-    "username": "blue",
-    "location": [
-      14,
-      2
-    ]
-  },
-  {
-    "username": "blue",
-    "location": [
-      17,
-      14
-    ]
-  },
-  {
-    "username": "brown",
-    "location": [
-      0,
-      8
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      19,
-      19
-    ]
-  },
-  {
-    "username": "blue",
-    "location": [
-      10,
-      12
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      10,
-      15
-    ]
-  },
-  {
-    "username": "brown",
-    "location": [
-      11,
-      4
-    ]
-  },
-  {
-    "username": "brown",
-    "location": [
-      11,
-      20
-    ]
-  },
-  {
-    "username": "blue",
-    "location": [
-      7,
-      12
-    ]
-  },
-  {
-    "username": "blue",
-    "location": [
-      0,
-      13
-    ]
-  },
-  {
-    "username": "brown",
-    "location": [
-      7,
-      15
-    ]
-  },
-  {
-    "username": "blue",
-    "location": [
-      3,
-      8
-    ]
-  },
-  {
-    "username": "blue",
-    "location": [
-      15,
-      12
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      11,
-      18
-    ]
-  },
-  {
-    "username": "blue",
-    "location": [
-      3,
-      1
-    ]
-  },
-  {
-    "username": "brown",
-    "location": [
-      20,
-      18
-    ]
-  },
-  {
-    "username": "brown",
-    "location": [
-      12,
-      9
-    ]
-  },
-  {
-    "username": "blue",
+    "age": 22,
     "location": [
       4,
-      7
+      5
     ]
   },
   {
-    "username": "brown",
-    "location": [
-      15,
-      17
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      2,
-      2
-    ]
-  },
-  {
-    "username": "brown",
-    "location": [
-      15,
-      8
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      13,
-      14
-    ]
-  },
-  {
-    "username": "green",
+    "username": "blue",
+    "age": 22,
     "location": [
       11,
       14
@@ -428,135 +49,594 @@ const users = [
   },
   {
     "username": "green",
+    "age": 60,
     "location": [
-      16,
+      8,
+      1
+    ]
+  },
+  {
+    "username": "green",
+    "age": 55,
+    "location": [
+      6,
+      20
+    ]
+  },
+  {
+    "username": "green",
+    "age": 59,
+    "location": [
+      12,
+      16
+    ]
+  },
+  {
+    "username": "green",
+    "age": 39,
+    "location": [
+      6,
+      4
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 42,
+    "location": [
+      1,
+      15
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 45,
+    "location": [
+      11,
+      15
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 22,
+    "location": [
+      9,
+      11
+    ]
+  },
+  {
+    "username": "blue",
+    "age": 24,
+    "location": [
+      11,
+      0
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 36,
+    "location": [
+      0,
+      3
+    ]
+  },
+  {
+    "username": "green",
+    "age": 46,
+    "location": [
+      15,
+      6
+    ]
+  },
+  {
+    "username": "green",
+    "age": 40,
+    "location": [
+      12,
+      18
+    ]
+  },
+  {
+    "username": "blue",
+    "age": 56,
+    "location": [
+      19,
+      0
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 32,
+    "location": [
+      0,
+      18
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 31,
+    "location": [
+      7,
+      2
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 17,
+    "location": [
+      1,
+      11
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 22,
+    "location": [
+      15,
+      12
+    ]
+  },
+  {
+    "username": "green",
+    "age": 26,
+    "location": [
+      8,
+      4
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 32,
+    "location": [
+      1,
+      16
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 54,
+    "location": [
+      8,
+      20
+    ]
+  },
+  {
+    "username": "green",
+    "age": 41,
+    "location": [
+      17,
+      15
+    ]
+  },
+  {
+    "username": "blue",
+    "age": 55,
+    "location": [
+      19,
+      16
+    ]
+  },
+  {
+    "username": "green",
+    "age": 30,
+    "location": [
+      0,
+      5
+    ]
+  },
+  {
+    "username": "green",
+    "age": 60,
+    "location": [
+      20,
+      6
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 34,
+    "location": [
+      15,
+      6
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 17,
+    "location": [
+      15,
+      16
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 38,
+    "location": [
+      0,
+      2
+    ]
+  },
+  {
+    "username": "green",
+    "age": 38,
+    "location": [
+      17,
+      18
+    ]
+  },
+  {
+    "username": "green",
+    "age": 16,
+    "location": [
+      13,
+      13
+    ]
+  },
+  {
+    "username": "green",
+    "age": 44,
+    "location": [
+      20,
+      6
+    ]
+  },
+  {
+    "username": "blue",
+    "age": 36,
+    "location": [
+      15,
+      20
+    ]
+  },
+  {
+    "username": "green",
+    "age": 33,
+    "location": [
+      11,
+      3
+    ]
+  },
+  {
+    "username": "green",
+    "age": 25,
+    "location": [
+      6,
+      16
+    ]
+  },
+  {
+    "username": "green",
+    "age": 26,
+    "location": [
+      18,
+      16
+    ]
+  },
+  {
+    "username": "blue",
+    "age": 47,
+    "location": [
+      13,
       3
     ]
   },
   {
     "username": "blue",
+    "age": 60,
     "location": [
-      9,
+      15,
       1
     ]
   },
   {
-    "username": "green",
+    "username": "blue",
+    "age": 49,
     "location": [
-      1,
+      14,
       12
     ]
   },
   {
-    "username": "green",
+    "username": "brown",
+    "age": 47,
     "location": [
-      15,
-      11
-    ]
-  },
-  {
-    "username": "blue",
-    "location": [
-      19,
-      9
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      16,
-      11
+      2,
+      4
     ]
   },
   {
     "username": "brown",
+    "age": 16,
     "location": [
-      14,
-      19
+      1,
+      6
     ]
   },
   {
-    "username": "blue",
+    "username": "green",
+    "age": 49,
     "location": [
-      7,
-      9
+      3,
+      2
     ]
   },
   {
-    "username": "brown",
-    "location": [
-      17,
-      9
-    ]
-  },
-  {
-    "username": "blue",
+    "username": "green",
+    "age": 55,
     "location": [
       8,
-      1
+      3
+    ]
+  },
+  {
+    "username": "blue",
+    "age": 38,
+    "location": [
+      12,
+      12
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 33,
+    "location": [
+      4,
+      17
+    ]
+  },
+  {
+    "username": "blue",
+    "age": 45,
+    "location": [
+      9,
+      4
     ]
   },
   {
     "username": "green",
+    "age": 20,
     "location": [
-      19,
+      18,
+      20
+    ]
+  },
+  {
+    "username": "blue",
+    "age": 59,
+    "location": [
+      13,
       14
     ]
   },
   {
+    "username": "green",
+    "age": 53,
+    "location": [
+      3,
+      10
+    ]
+  },
+  {
+    "username": "green",
+    "age": 41,
+    "location": [
+      9,
+      14
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 36,
+    "location": [
+      20,
+      4
+    ]
+  },
+  {
+    "username": "green",
+    "age": 26,
+    "location": [
+      7,
+      20
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 34,
+    "location": [
+      1,
+      10
+    ]
+  },
+  {
     "username": "blue",
+    "age": 20,
     "location": [
       10,
       2
     ]
   },
   {
-    "username": "brown",
+    "username": "blue",
+    "age": 21,
     "location": [
-      13,
-      13
-    ]
-  },
-  {
-    "username": "brown",
-    "location": [
-      14,
-      6
+      12,
+      1
     ]
   },
   {
     "username": "blue",
+    "age": 57,
     "location": [
-      14,
-      5
-    ]
-  },
-  {
-    "username": "green",
-    "location": [
-      17,
-      6
+      4,
+      8
     ]
   },
   {
     "username": "brown",
+    "age": 59,
     "location": [
-      0,
+      1,
       10
     ]
   },
   {
-    "username": "blue",
+    "username": "brown",
+    "age": 30,
     "location": [
-      16,
-      2
+      15,
+      12
     ]
   },
   {
     "username": "brown",
+    "age": 48,
     "location": [
-      4,
-      11
+      13,
+      2
+    ]
+  },
+  {
+    "username": "green",
+    "age": 30,
+    "location": [
+      17,
+      14
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 22,
+    "location": [
+      9,
+      20
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 18,
+    "location": [
+      12,
+      13
+    ]
+  },
+  {
+    "username": "green",
+    "age": 42,
+    "location": [
+      8,
+      13
+    ]
+  },
+  {
+    "username": "blue",
+    "age": 43,
+    "location": [
+      17,
+      17
+    ]
+  },
+  {
+    "username": "green",
+    "age": 44,
+    "location": [
+      16,
+      16
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 39,
+    "location": [
+      15,
+      7
+    ]
+  },
+  {
+    "username": "blue",
+    "age": 22,
+    "location": [
+      5,
+      7
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 16,
+    "location": [
+      14,
+      14
+    ]
+  },
+  {
+    "username": "green",
+    "age": 54,
+    "location": [
+      18,
+      13
+    ]
+  },
+  {
+    "username": "blue",
+    "age": 59,
+    "location": [
+      9,
+      6
+    ]
+  },
+  {
+    "username": "blue",
+    "age": 44,
+    "location": [
+      7,
+      4
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 27,
+    "location": [
+      2,
+      14
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 29,
+    "location": [
+      20,
+      7
+    ]
+  },
+  {
+    "username": "blue",
+    "age": 20,
+    "location": [
+      8,
+      1
+    ]
+  },
+  {
+    "username": "blue",
+    "age": 40,
+    "location": [
+      6,
+      16
+    ]
+  },
+  {
+    "username": "brown",
+    "age": 47,
+    "location": [
+      6,
+      7
+    ]
+  },
+  {
+    "username": "green",
+    "age": 56,
+    "location": [
+      11,
+      14
     ]
   }
 ]
